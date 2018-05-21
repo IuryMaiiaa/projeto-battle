@@ -1,0 +1,237 @@
+Begin Object Class=/Script/Engine.Material Name="CFMat1"
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant Name="MaterialExpressionConstant_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionConstant3Vector Name="MaterialExpressionConstant3Vector_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionDepthFade Name="MaterialExpressionDepthFade_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionFresnel Name="MaterialExpressionFresnel_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionLinearInterpolate Name="MaterialExpressionLinearInterpolate_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMax Name="MaterialExpressionMax_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMax Name="MaterialExpressionMax_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMax Name="MaterialExpressionMax_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMax Name="MaterialExpressionMax_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionMultiply Name="MaterialExpressionMultiply_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionOneMinus Name="MaterialExpressionOneMinus_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSine Name="MaterialExpressionSine_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionSphereMask Name="MaterialExpressionSphereMask_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureCoordinate Name="MaterialExpressionTextureCoordinate_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionWorldPosition Name="MaterialExpressionWorldPosition_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionConstant_0"
+      R=10.000000
+      MaterialExpressionEditorX=-896
+      MaterialExpressionEditorY=144
+      MaterialExpressionGuid=9D401384482AF60BB569FDBB141A2C19
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_1"
+      R=10.000000
+      MaterialExpressionEditorX=-1232
+      MaterialExpressionEditorY=352
+      MaterialExpressionGuid=B8F20A8D44675D9394B443B277581FF1
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionConstant_3"
+      R=0.800000
+      MaterialExpressionEditorX=-679
+      MaterialExpressionEditorY=1171
+      MaterialExpressionGuid=166DC95C4778B585ED8D29A669721544
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_0"
+      Constant=(R=0.283149,G=0.000000,B=0.000000,A=1.000000)
+      MaterialExpressionEditorX=-528
+      MaterialExpressionEditorY=-80
+      MaterialExpressionGuid=79320CC34E69E586118149A4C44C4EBD
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionConstant3Vector_1"
+      Constant=(R=1.000000,G=0.000000,B=0.000000,A=1.000000)
+      MaterialExpressionEditorX=-800
+      MaterialExpressionEditorY=-64
+      MaterialExpressionGuid=983B936544E9C0742A1C80A61A7917C5
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionDepthFade_0"
+      FadeDistance=(Expression=MaterialExpressionConstant'CFMat1:MaterialExpressionConstant_1')
+      MaterialExpressionEditorX=-928
+      MaterialExpressionEditorY=288
+      MaterialExpressionGuid=8E042827491F6EB814B0CCB8AF87A3C2
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionFresnel_0"
+      ExponentIn=(Expression=MaterialExpressionConstant'CFMat1:MaterialExpressionConstant_0')
+      MaterialExpressionEditorX=-624
+      MaterialExpressionEditorY=112
+      MaterialExpressionGuid=78EC5DBF4D8054779479BF8EE91EECF0
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionLinearInterpolate_0"
+      A=(Expression=MaterialExpressionConstant3Vector'CFMat1:MaterialExpressionConstant3Vector_0')
+      B=(Expression=MaterialExpressionConstant3Vector'CFMat1:MaterialExpressionConstant3Vector_1')
+      Alpha=(Expression=MaterialExpressionMax'CFMat1:MaterialExpressionMax_1')
+      MaterialExpressionEditorX=-320
+      MaterialExpressionEditorY=32
+      MaterialExpressionGuid=6767AD284DED068B09ECC899CF73E9B3
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionMax_0"
+      A=(Expression=MaterialExpressionFresnel'CFMat1:MaterialExpressionFresnel_0')
+      B=(Expression=MaterialExpressionOneMinus'CFMat1:MaterialExpressionOneMinus_0')
+      MaterialExpressionEditorX=-432
+      MaterialExpressionEditorY=240
+      MaterialExpressionGuid=BEA933D1464F5530F7EA7E9CF5113967
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionMax_1"
+      A=(Expression=MaterialExpressionMax'CFMat1:MaterialExpressionMax_0')
+      B=(Expression=MaterialExpressionMax'CFMat1:MaterialExpressionMax_3')
+      MaterialExpressionEditorX=-208
+      MaterialExpressionEditorY=320
+      MaterialExpressionGuid=5A03DF9E4E2854D50AFFFFA6E431B090
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionMax_2"
+      A=(Expression=MaterialExpressionTextureSample'CFMat1:MaterialExpressionTextureSample_2',OutputIndex=2,Mask=1,MaskG=1)
+      B=(Expression=MaterialExpressionSine'CFMat1:MaterialExpressionSine_0')
+      MaterialExpressionEditorX=-464
+      MaterialExpressionEditorY=624
+      MaterialExpressionGuid=5A03DF9E4E2854D50AFFFFA6E431B090
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionMax_3"
+      A=(Expression=MaterialExpressionMax'CFMat1:MaterialExpressionMax_0')
+      B=(Expression=MaterialExpressionMax'CFMat1:MaterialExpressionMax_2')
+      MaterialExpressionEditorX=-336
+      MaterialExpressionEditorY=336
+      MaterialExpressionGuid=BEA933D1464F5530F7EA7E9CF5113967
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionMultiply_3"
+      A=(Expression=MaterialExpressionTextureCoordinate'CFMat1:MaterialExpressionTextureCoordinate_1')
+      MaterialExpressionEditorX=-944
+      MaterialExpressionEditorY=560
+      MaterialExpressionGuid=AB0A1AC14A938C84F3BEDE8BA1791C9A
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionOneMinus_0"
+      Input=(Expression=MaterialExpressionDepthFade'CFMat1:MaterialExpressionDepthFade_0')
+      MaterialExpressionEditorX=-630
+      MaterialExpressionEditorY=332
+      MaterialExpressionGuid=E42BAD16482C43AD17CDFFA39A9215EE
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_0"
+      ParameterName="Radius"
+      ExpressionGUID=FEC174DB4F2BEF2543C70E99F12B839B
+      MaterialExpressionEditorX=-902
+      MaterialExpressionEditorY=1174
+      MaterialExpressionGuid=31E9DAB344D7D6235C6EA8BD8A86C7DB
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionSine_0"
+      Input=(Expression=MaterialExpressionSphereMask'CFMat1:MaterialExpressionSphereMask_0')
+      Period=0.200000
+      MaterialExpressionEditorX=-450
+      MaterialExpressionEditorY=825
+      MaterialExpressionGuid=2A89B5A54A1642CBA0A349B121A2513F
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionSphereMask_0"
+      A=(Expression=MaterialExpressionWorldPosition'CFMat1:MaterialExpressionWorldPosition_0')
+      B=(Expression=MaterialExpressionVectorParameter'CFMat1:MaterialExpressionVectorParameter_0',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      Radius=(Expression=MaterialExpressionScalarParameter'CFMat1:MaterialExpressionScalarParameter_0')
+      Hardness=(Expression=MaterialExpressionConstant'CFMat1:MaterialExpressionConstant_3')
+      MaterialExpressionEditorX=-624
+      MaterialExpressionEditorY=880
+      MaterialExpressionGuid=0CD0BC4E49EB63B7E084EC96FD327D43
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionTextureCoordinate_1"
+      MaterialExpressionEditorX=-1184
+      MaterialExpressionEditorY=528
+      MaterialExpressionGuid=56DE13EB4C37B78EAB6D5C96903D7A92
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_2"
+      Coordinates=(Expression=MaterialExpressionMultiply'CFMat1:MaterialExpressionMultiply_3')
+      Texture=Texture2D'/Game/Armas/CampodeForca/campotextura.campotextura'
+      MaterialExpressionEditorX=-720
+      MaterialExpressionEditorY=592
+      MaterialExpressionGuid=97555B074729CB95F77C308855343C77
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      ParameterName="Pos"
+      ExpressionGUID=13C2FFAC4E1DD86FA8FF6E98A571E445
+      MaterialExpressionEditorX=-854
+      MaterialExpressionEditorY=934
+      MaterialExpressionGuid=16A8DA9446C0977E484841B36C3578DA
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="MaterialExpressionWorldPosition_0"
+      MaterialExpressionEditorX=-1110
+      MaterialExpressionEditorY=838
+      MaterialExpressionGuid=A9DDE6EB4E12DB33F784C6B310BACFF3
+      Material=Material'CFMat1'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   EmissiveColor=(Expression=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_0')
+   Opacity=(Expression=MaterialExpressionMax'MaterialExpressionMax_1')
+   BlendMode=BLEND_Translucent
+   TwoSided=True
+   Expressions(0)=MaterialExpressionLinearInterpolate'MaterialExpressionLinearInterpolate_0'
+   Expressions(1)=MaterialExpressionMax'MaterialExpressionMax_1'
+   Expressions(2)=MaterialExpressionFresnel'MaterialExpressionFresnel_0'
+   Expressions(3)=MaterialExpressionConstant'MaterialExpressionConstant_0'
+   Expressions(4)=MaterialExpressionConstant3Vector'MaterialExpressionConstant3Vector_0'
+   Expressions(5)=MaterialExpressionConstant3Vector'MaterialExpressionConstant3Vector_1'
+   Expressions(6)=MaterialExpressionDepthFade'MaterialExpressionDepthFade_0'
+   Expressions(7)=MaterialExpressionMax'MaterialExpressionMax_0'
+   Expressions(8)=MaterialExpressionOneMinus'MaterialExpressionOneMinus_0'
+   Expressions(9)=MaterialExpressionConstant'MaterialExpressionConstant_1'
+   Expressions(10)=MaterialExpressionSphereMask'MaterialExpressionSphereMask_0'
+   Expressions(11)=MaterialExpressionWorldPosition'MaterialExpressionWorldPosition_0'
+   Expressions(12)=MaterialExpressionVectorParameter'MaterialExpressionVectorParameter_0'
+   Expressions(13)=MaterialExpressionScalarParameter'MaterialExpressionScalarParameter_0'
+   Expressions(14)=MaterialExpressionConstant'MaterialExpressionConstant_3'
+   Expressions(15)=MaterialExpressionMax'MaterialExpressionMax_2'
+   Expressions(16)=MaterialExpressionTextureCoordinate'MaterialExpressionTextureCoordinate_1'
+   Expressions(17)=MaterialExpressionMultiply'MaterialExpressionMultiply_3'
+   Expressions(18)=MaterialExpressionTextureSample'MaterialExpressionTextureSample_2'
+   Expressions(19)=MaterialExpressionMax'MaterialExpressionMax_3'
+   Expressions(20)=MaterialExpressionSine'MaterialExpressionSine_0'
+   ParameterGroupData(0)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=A0559775443C6F9B5D981C8E38057338
+   ReferencedTextureGuids(0)=77F243374CCE83C29B48638616BF94E2
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'SceneThumbnailInfoWithPrimitive_0'
+   LightingGuid=9574B26948D69D0E681C82A95F111396
+End Object
